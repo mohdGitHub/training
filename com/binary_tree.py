@@ -2,7 +2,9 @@ import math
 
 
 class Node:
-
+    """
+    Node class: represents basic node class that Tree data structure will depend on to represent its children nodes
+    """
     def __init__(self, value, left_child=None, right_child=None, upper_limit=None, lower_limit=None):
         self.value = value
         self.left_child = left_child
@@ -13,7 +15,9 @@ class Node:
 
 
 class Tree:
-
+    """
+    Tree class: Represents Tree class that Tree data structure
+    """
     def __init__(self, root):
         self.root = root
         self.current = root
@@ -161,4 +165,4 @@ if __name__ == '__main__':
     # print(first_tree.equals(second_tree))
     # print(f"is bst : {first_tree.is_bst()}")
     # first_tree.get_nodes_at_distance(0)
-    first_tree.breadth_first_search()
+    # first_tree.breadth_first_search()
